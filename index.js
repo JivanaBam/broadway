@@ -62,7 +62,7 @@ app.delete("/course/delete/:id", async (req, res) => {
 
   // if not valid mongo id, throw error
   if (!isValidMongoId) {
-    return res.status(400).send({ message: "Inalid mongo Id" });
+    return res.status(400).send({ message: "Invalid mongo Id" });
   }
 
   // find course by id
